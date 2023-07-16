@@ -22,6 +22,9 @@ int main()
 	vec.push_back(8); 
 	// vec: {4 , 1 , 8} , vec.size() == 3
 
+	std::cout << vec.front() << '\n'; // vec.front == 4
+	std::cout << vec.back() << '\n'; // vec.back == 8
+
 	std::vector<int>::iterator itrbegin = vec.begin();
 	std::vector<int>::iterator itrend = vec.end();
 
@@ -62,6 +65,25 @@ int main()
 
 	//Common Member Functions of All Containers 
 	// vec: {4, 1, 8}
+
+
+	// ----------------------- 
+	// ------------------------
+	// ---------- Note ---------
+	// --------------------------
+
+	// Can also iterate through vectors using commands below 
+	// Initiate vectest; 
+	
+	std::vector<int> vectest{3};
+	for (auto &x : vectest)
+		std::cin >> x;
+
+	// ----------------------- 
+	// ------------------------
+	// ---------- Note ---------
+	// --------------------------
+
 
 	if (vec.empty()) { std::cout << "Not Poossible\n";}
 
